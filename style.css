@@ -31,6 +31,12 @@ h1 {
     line-height: 1.25;
 }
 
+#app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .flex-col {
     flex-direction: column !important;
 }
@@ -40,10 +46,12 @@ h1 {
 }
 
 .navbar {
-    height: 165px;
+    height: 326px;
+    padding: 40px 15px;
+    background-color: grey;
     display: flex;
     align-items: center;
-    padding: 0 50px;
+    position: relative;
     font-size: 18px;
     font-weight: 600;
 }
@@ -107,6 +115,7 @@ a.btn-contact {
 
 input {
     color: rgba(0, 0, 0, .87);
+    border: 1px solid #0a1f44;
     width: 100%;
     max-width: 800px;
     height: 60px;
@@ -120,6 +129,7 @@ input {
     position: relative;
     border-radius: 50px;
     overflow: hidden;
+
 }
 
 .search-wrapper {
@@ -132,4 +142,19 @@ input {
     padding: 0 20px 0 8px;
     color: #6030b1;
     font-size: 32px;
+}
+
+.overlay {
+    background-image: url(https://djmzubtjl6upi.cloudfront.net/wp-content/uploads/sites/3/2018/03/Roxy-Cinema-Tribeca1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
 }
